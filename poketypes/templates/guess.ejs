@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8"> 
+        <link rel="stylesheet" href="/pokegame.css" type="text/css">
+        <link href="https://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet">
+        <title>PokeGame</title>
+    </head>
+
+    <body>
+        <div class="title"><p>Guess The Pokémon Based On These Stats!</p></div>
+        <form action="/processGuess" method="POST">
+            <div class="centered">
+                <input type="hidden" name="id" value="<%- id %>" />
+                <p> Weight: <%- weight %> <br>
+                Types: <%- types %></p>
+                <img src="<%- image %>" class="hidden">
+            </div>
+            <div class="centered"><p>Username:</p></div>
+            <div class="centered">
+                <input type="text" id="username" name="username" required/>
+            </div>
+            <div class="centered"><p>Guess:</p></div>
+            <div class="centered">
+                <input type="text" id="guess" name="guess" required/>
+            </div>
+            <div class="centered">
+                <button type="submit">Submit</button><button type="reset">Reset</button>
+            </div>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,50 @@
+html{
+    font-family: 'Pokemon Solid', sans-serif;
+    letter-spacing: .2rem;
+}
+
+body{
+    width: 100%;
+    align-items : center;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: green;
+    overflow: hidden;
+    background-image:url('/pokebackground.jpeg');
+}
+
+.title{
+    font-size: xx-large;
+    margin: auto;
+    text-align: center;
+    width: 50%;
+    height: auto;
+    background-color: #0075BE;
+    color: #FFCC00;
+}
+
+button{
+    border-radius: 8px;
+    width: 20%;
+    font-size: xx-large;
+    display: block;
+    margin: auto;
+    font-family: 'Pokemon Solid', sans-serif;
+    letter-spacing: .2rem;
+}
+
+.centered{
+    display: flex;
+    justify-content: center;
+}
+
+.button:hover{
+    transform: scale(1.2);
+}
+
+.hidden{
+    filter: brightness(0);
+}
